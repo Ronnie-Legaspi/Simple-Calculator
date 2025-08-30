@@ -5,4 +5,4 @@ You can test with this link https://ronnie-legaspi.github.io/Simple-Calculator/
 
 ## Screenshot
 
-![Calculator Screenshot](assets/screenshot.png)
+![Calculator Screenshot](assets/ss1.png)
