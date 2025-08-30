@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronnie Legaspi - Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        
+
+        <!-- table for dividing the mainScreen and keyboard -->
+        <table class="mainTable">
+            <tr>
+                <td class="mainScreen" >
+                    <textarea  id="mainScreen" readonly >0</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="keyboardScreen">
+                        <tr >
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td colspan="4"><button class="clear" onclick="clearScreen()">C</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="numClick('9')">9</button></td>
+                            <td><button onclick="numClick('8')">8</button></td>
+                            <td><button onclick="numClick('7')">7</button></td>
+                            <td><button class="operator" onclick="numClick('/')">/</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="numClick('6')">6</button></td>
+                            <td><button onclick="numClick('5')">5</button></td>
+                            <td><button onclick="numClick('4')">4</button></td>
+                            <td><button class="operator" onclick="numClick('*')">*</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="numClick('3')">3</button></td>
+                            <td><button onclick="numClick('2')">2</button></td>
+                            <td><button onclick="numClick('1')">1</button></td>
+                            <td><button class="operator" onclick="numClick('-')">-</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="numClick('0')">0</button></td>
+                            <td><button onclick="numClick('.')">.</button></td>
+                            <td><button class="operator" class="equal" onclick="calculate()">=</button></td>
+                            <td><button class="operator" onclick="numClick('+')">+</button></td>
+                        </tr>
+            
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+
+        
+        
+    </div>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
